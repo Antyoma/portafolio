@@ -212,7 +212,10 @@ html{
 }
 /* SECCION S K I L L S */
 .skills{
-    background-color: #252A2E;
+    background-image: url(img/fondoskills.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
@@ -361,6 +364,66 @@ html{
     100%{width: 75%;}
 }
 /* SECCION TECNOLOGIAS*/
+.tecnologias{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.tecnologias .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.tecnologias h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.tecnologias .fila{
+    display: flex;
+}
+.tecnologias .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.tecnologias .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.tecnologias .tecnologias > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.tecnologias .tecnologias .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.tecnologias .tecnologias .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.tecnologias .tecnologias .barra-tecnologias span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
 
 .fila{
     
