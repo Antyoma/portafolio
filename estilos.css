@@ -363,18 +363,19 @@ html{
 /* SECCION TECNOLOGIAS*/
 
 .fila{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    }
+}
 
 .servicio{
    width: 130px;   
    margin-bottom: 15px; 
    position: relative;
-   overflow: hidden;
+   overflow:visible;
    text-align: center;
-   }
+}
 
 .servicio::before{
     content: '';
@@ -398,9 +399,9 @@ html{
     padding: 5px;
     width: 100px;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: transform 1.0s ease;
-    object-fit: cover;
+    object-fit:inherit;
 }
 
 .servicio:hover img{
@@ -571,23 +572,23 @@ html{
     margin-bottom: 0px;
 }
 
-/* SECCION TECNOLOGIAS*/
+/* SECCION CERTIFICACIONES*/
 
 .certificaciones{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    }
+}
 
-.item{
-   width: 130px;   
-   margin-bottom: 15px; 
-   position: relative;
-   overflow: hidden;
+.certitem{
+   width: 25%;
+   box-sizing: border-box;
+   float: left;
    text-align: center;
-   }
+   padding: 10px;
+}
 
-.item::before{
+.certitem::before{
     content: '';
     position: absolute;
     top: 0;
@@ -600,24 +601,22 @@ html{
     pointer-events: none;
 }
 
-.item:hover::before{
+.certitem:hover::before{
     opacity: 1;
 }
 
-.item img{
+.certitem img{
     margin: 5px;
     padding: 5px;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 30px;
     transition: transform 1.0s ease;
-    object-fit: cover;
+    object-fit:fill;
 }
 
-.item:hover img{
-    transform: scale(2.1);
+.certitem:hover img{
+    transform: scale(2.0);
 }
-
 
 /* SECCION CONTACTO */
 .contacto{
@@ -627,7 +626,7 @@ html{
     padding: 50px 0;
 }
 .contacto .contenido-seccion{
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
 }
 .contacto h2{
@@ -638,22 +637,27 @@ html{
 }
 .contacto .fila{
     display: flex;
+    justify-content: center;
 }
 .contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .contacto .col input, .contacto .col textarea{
     display: block;
-    width: 100%;
+    width: 150%;
     padding: 18px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
 }
+
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
