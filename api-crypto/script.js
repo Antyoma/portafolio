@@ -34,8 +34,25 @@ function consultarAPI(moneda, criptomoneda){
     fetch(url)
         .then(resultado => resultado.json())
         .then(resultadoJson => {
-            console.log(resultadoJson);
+            mostrarCotizacion(resultadoJson.DISPLAY[criptomoneda][moneda]);
+            //console.log(resultadoJson.DISPLAY[criptomoneda][moneda]);
         })
+        .catch(error => console.log(error));
+}
+
+function mostrarCotizacion(data){
+    clearHTML();
+    const {PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, LASTUPDATE} = data;
+    const answer = document.createElement('div');
+    answer.classList.add('display-info');
+    answer.innerHTML = `
+    <p class="main-price">Precio: <span>${PRICE}</span></p>
+    <p>Precio más alto del día:: <span>${HIGHDAY}</span></p>
+    <p>Precio más bajo del día: <span>${LOWDAY}</span></p>
+    <p>Variación últimas 24 horas: <span>${CHANGEPCT24HOUR}%</span></p>
+    <p>Última Actualización: <span>${LASTUPDATE}</span></p>
+    `;
+    containerAnswer.appendChild(answer);
 }
 
 function showError(mensage){
@@ -71,3 +88,7 @@ function selectCriptos(criptos){
         criptomoneda.appendChild(option);
     });
 }
+
+function clearHTML(){
+    containerAnswer.innerHTML = '';
+};

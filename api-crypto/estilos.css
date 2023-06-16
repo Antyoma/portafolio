@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    /* background-color: darkblue;*/
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)), url(../img/fondoskills.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 200px;
 } 
 
 .main-section {
+    position: relative;
     text-align: center;
     margin: 9% auto 0;
     width: 60%;
     padding: 29px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: solid 20px #00a478;
+    border-radius: 20px;
 }
 .main-section h2 {
     text-transform: uppercase;
-    color: #736c6c;
+    color: white;
+    position: relative;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .container{
     display: flex;
@@ -35,6 +47,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 20px;
 }
 .form-side #form-search select {
     font-size: inherit;
@@ -74,4 +87,50 @@ input[type="submit"]:hover {
 .display-info .main-price{
     font-size: 28px;
     margin-bottom: 2px;
+}
+
+.container-answer{
+    color: white;
+}
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+footer .redes{
+    text-align: center;
+}
+
+footer .redes a, footer.redes p{
+    display: inline-block;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+footer .redes a:hover{
+    background-color: #1CB698;
+}
+
+footer .redes p{
+    margin-top: 5px;
 }
