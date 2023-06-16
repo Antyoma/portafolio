@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)), url(../img/fondoskills.avif);
+    background: linear-gradient(to top, rgba(30, 35, 38, .5), rgba(30, 35, 38, 1)), url(../img/fondoskills.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 200px;
-} 
+}
 
 .main-section {
     position: relative;
     text-align: center;
     margin: 9% auto 0;
-    width: 60%;
+    width: 90%;
+    max-width: 800px;
     padding: 29px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: solid 20px #00a478;
     border-radius: 20px;
 }
+
 .main-section h2 {
     text-transform: uppercase;
     color: white;
@@ -27,28 +30,41 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-.container{
+
+.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
     gap: 30px;
 }
+
 .form-side {
-    width: 50%;
+    flex: 1 1 auto;
+    width: 100%;
     margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .form-side form#form-search {
     display: flex;
     flex-direction: column;
 }
+
 .image-side {
     background-image: url(./img/cripotoImage.png);
     height: 400px;
     width: 50%;
+    max-width: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+    flex: 0 0 auto;
 }
+
 .form-side #form-search select {
     font-size: inherit;
     margin: 8px 0px 7px;
@@ -58,10 +74,15 @@ body{
     border-radius: 7px;
     border: solid 1px #ada2a2;
     color: #736d6d;
+    width: 100%;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
 }
+
+
 input[type="submit"] {
     margin: 9px auto 0px;
-    width: 50%;
+    width: 100%;
+    max-width: 200px;
     color: cadetblue;
     background-color: #00a478;
     border: solid 0px #ada2a2;
@@ -73,27 +94,31 @@ input[type="submit"] {
     height: 37px;
     font-family: 'Montserrat', sans-serif;
 }
+
 input[type="submit"]:hover {
     color: #00a478;
     background-color: #fff;
     border: solid 2px #00a478;
 }
+
 .error {
     color: red;
 }
-.display-info p span{
+
+.display-info p span {
     font-weight: 700;
 }
-.display-info .main-price{
+
+.display-info .main-price {
     font-size: 28px;
     margin-bottom: 2px;
 }
 
-.container-answer{
+.container-answer {
     color: white;
 }
 
-footer{
+footer {
     background-color: #252A2E;
     color: #fff;
     padding: 10px 0;
@@ -104,15 +129,17 @@ footer{
     width: 100%;
     height: 100px;
 }
-footer .redes{
+
+footer .redes {
     text-align: center;
 }
 
-footer .redes a, footer.redes p{
+footer .redes a,
+footer.redes p {
     display: inline-block;
 }
 
-footer .redes a{
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -127,10 +154,11 @@ footer .redes a{
     margin-top: 10px;
     margin-bottom: 5px;
 }
-footer .redes a:hover{
+
+footer .redes a:hover {
     background-color: #1CB698;
 }
 
-footer .redes p{
+footer .redes p {
     margin-top: 5px;
 }
