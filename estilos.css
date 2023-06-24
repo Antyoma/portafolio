@@ -614,6 +614,7 @@ html{
 }
 .portfolio .galeria .proyecto img{
     width: 100%;
+    height:min-content;
     display: block;
     border-radius: 15px;
 }
